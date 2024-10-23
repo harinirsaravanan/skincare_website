@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Skin Care Tracker</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    
+    body {
+      background-color: lightslategray;
+      padding-top: 50px;
+      background-image: url(morebg1.jpg);
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    #p1 {
+      font-weight: bold;
+    }
+    
+    .nav1 {
+      padding-top: 0%;
+      background-color: rgb(0, 0, 0);
+    }
+    
+    .navbar-brand {
+      
+      font-size: 30px;
+      font-weight: bold;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .center-heading {
+      width: 100%;
+      text-align: center;
+      font-size: 42px;
+      margin-top: 30px;
+      font-family: "Arial Black", sans-serif;
+      color: aliceblue;
+      
+    }
+    
+    .caption {
+      text-align: center;
+      margin-bottom: 20px;
+      
+    }
+    
+    .caption p {
+      margin-top: 20px;
+      color: azure;
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+    
+    .image-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      overflow-x: auto;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+    
+    .image-container img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      transition: transform 0.3s ease;
+    }
+    
+    .image-container img:hover {
+      transform: scale(1.1);
+    }
+    
+    .additional-info {
+      text-align: center;
+      margin-bottom: 30px;
+      font-family: 'Times New Roman', Times, serif;
+      color: azure;
+      font-size: 20px;
+    }
+    
+    .thumbnail-container {
+      text-align: center;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: black;
+      border: 1px solid #ccc;
+      color: azure;
+      width: 100%;
+
+    }
+    
+    .thumbnail-container p {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .btn-analyse {
+      display: block;
+      margin: 30px auto;
+      text-align: center;
+    }
+    
+    .parallel-images {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+    
+    .parallel-images img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border: 1px solid #ccc;
+      transition: transform 0.3s ease;
+    }
+    
+    .parallel-images img:hover {
+      transform: scale(1.1);
+    }
+
+    .navbar {
+            background-color: rgba(51, 51, 51, 0.75);
+
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(5px);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 999;
+        }
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .navbar nav {
+            display: flex;
+            align-items: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 16px;
+            padding: 0.5rem;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <h1>Glow Guide</h1>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="more.html">About</a>
+        <a href="skin.html">SKIN</a>
+        <a href="lifestyle.html">LIFESTYLE</a>
+        <a href="pre.html">PREFERENCES</a>
+        <a href="index.html">LOGOUT</a> <!-- Updated link -->
+    </nav>
+  </header>
+  
+
+  <div class="container">
+    <h1 class="center-heading">Welcome to Glow Guide</h1>
+    <div class="caption">
+      <p>Introducing our revolutionary Glow Guide, your ultimate companion on the journey to radiant and healthy skin</p>
+    </div>
+
+    <div class="image-container">
+      <img src="img1.webp" alt="Image 1">
+      <img src="img2.jpeg" alt="Image 2">
+      <img src="img3.webp" alt="Image 3">
+    </div>
+
+    <div class="additional-info">
+      <p id="p1">We won't judge your solution</p>
+      <p>We will make you one</p>
+    </div>
+
+    <div class="parallel-images">
+      <img src="rare.webp" alt="Image 1">
+      <img src="eightytwo.webp" alt="Image 2">
+      <img src="rhode.png" alt="Image 3">
+      <img src="lip.webp" alt="Image 4">
+    </div>
+
+    <div class="image-container">
+      <img src="lv.webp" alt="Image 1">
+      <img src="dior.jpeg" alt="Image 2">
+      <img src="channel1.jpeg" alt="Image 3">
+    </div>
+    <br><br>
+
+    <div class="btn-analyse">
+      <a class="btn btn-secondary btn-lg" href="more.html">More</a>
+    </div>
+
+    <div class="thumbnail-container">
+      <p>Contact: +9443784432</p>
+      <p>Email: gguide@gmail.com</p>
+    
+      <!-- Add more information here -->
+    </div>
+  </div>
+</body>
+</html>

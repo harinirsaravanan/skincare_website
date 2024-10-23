@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Page - Glow Guide</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    body {
+      background-image: url(bg1.jpeg);
+      font-family: Arial, sans-serif;
+      color: aliceblue;
+      background-color: #f8f9fa;
+      padding-top: 50px;
+      margin: 0;
+    }
+
+    .header {
+      text-align: center;
+      font-size: 36px;
+      font-weight: bold;
+      font-family: 'Arial Black', sans-serif;
+      margin-top: 50px;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center; /* Center images horizontally */
+      flex-wrap: wrap; /* Allow images to wrap to the next line */
+      gap: 30px; /* Add space between images */
+      margin-top: 50px;
+      margin-bottom: 100px; /* Increased margin bottom */
+    }
+
+    .image-container img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      opacity: 0.5;
+      transition: opacity 0.5s ease;
+    }
+
+    .image-container img:hover {
+      opacity: 1;
+    }
+
+    .image-info {
+      width: 300px; /* Adjusted width to match image size */
+      text-align: center;
+      margin-bottom: 30px; /* Adjust the margin-bottom value to add space between images */
+    }
+
+    .image-info p {
+      margin-top: 10px; /* Increased margin top for better spacing */
+      color:lightgoldenrodyellow;
+    }
+
+    .login-link {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    .login-link a {
+      color: #ff006f;
+    }
+
+    .navbar {
+            background-color: rgba(51, 51, 51, 0.75);
+
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(5px);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 999;
+        }
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .navbar nav {
+            display: flex;
+            align-items: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 16px;
+            padding: 0.5rem;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <h1>Glow Guide</h1>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="more.html">About</a>
+        <a href="skin.html">SKIN</a>
+        <a href="lifestyle.html">LIFESTYLE</a>
+        <a href="pre.html">PREFERENCES</a>
+        <a href="index.html">LOGOUT</a> <!-- Updated link -->
+    </nav>
+</header>
+  <div class="container">
+    <div class="header">
+      About Glow Guide
+    </div>
+    <div class="content">
+      <p>
+        Welcome to Glow Guide, your ultimate companion on the journey to radiant and healthy skin. 
+        Glow Guide is a revolutionary skincare tracker that helps you achieve your skincare goals 
+        with ease. Our platform offers personalized skincare recommendations tailored to your 
+        unique skin needs, allowing you to track your progress and discover the best products 
+        and routines for your skin type.
+      </p>
+      <br><br><br><br><br>
+      <h3>Basic SkinCare Steps for Beginners</h3>
+      <br><br><br>
+      <div class="image-container">
+        <div class="image-info">
+          <img src="moreimg1.jpeg" alt="Image 1">
+          <ul>
+            <li><strong>STEP:1</strong></li>
+          </ul>
+          <p>Always cleanse your face before starting your skincare routine. Wet your face, apply cleanser, massage in circular motions, then rinse thoroughly.</p>
+        </div>
+        <div class="image-info">
+          <img src="moreimg2.jpeg" alt="Image 2">
+          <ul>
+            <li><strong>STEP:2</strong></li>
+          
+          </ul>
+          <p>After cleansing, apply toner onto a cotton pad and gently sweep across the face, allowing it to absorb.</p>
+        </div>
+        <div class="image-info">
+          <img src="moreimg3.webp" alt="Image 3">
+          <ul>
+            <li><strong>STEP:3</strong></li>
+          </ul>
+          <p>Dispense a small amount of serum onto fingertips, pat or massage onto cleansed skin, and allow it to fully absorb.</p>
+        </div>
+        <div class="image-info">
+          <img src="moreimg4.jpeg" alt="Image 4">
+          <ul>
+            <li><strong>STEP:4</strong></li>
+          </ul>
+          <p>Following serum application, apply moisturizer evenly onto the face and neck, massaging gently until fully absorbed.</p>
+        </div>
+      </div>
+    </div>
+    <p class="login-link">To analyze your skin <a href="login.html">login</a></p>
+  </div>
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>

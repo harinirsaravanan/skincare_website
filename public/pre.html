@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Type Questionnaire</title>
+    <style>
+        body {
+            background-image: url('skin care.webp');
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background-color: white;
+            border-radius: 15px;
+            max-width: 800px;
+            margin: 150px auto; /* Center the container */
+            padding: 20px;
+        }
+        .navbar {
+            background-color: rgba(51, 51, 51, 0.75);
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(5px);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 999;
+        }
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .navbar nav {
+            display: flex;
+            align-items: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 16px;
+            padding: 0.5rem;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        h4 {
+            margin-bottom: 5px;
+        }
+        .answers {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        label {
+            margin-right: 10px;
+        }
+        button {
+            display: block;
+            margin: 20px auto 0;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .navbar {
+            background-color: rgba(51, 51, 51, 0.75);
+
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(5px);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 999;
+        }
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .navbar nav {
+            display: flex;
+            align-items: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 16px;
+            padding: 0.5rem;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <h1>Glow Guide</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="more.html">About</a>
+            <a href="skin.html">SKIN</a>
+            <a href="lifestyle.html">LIFESTYLE</a>
+            <a href="pre.html">PREFERENCES</a>
+            <a href="index.html">LOGOUT</a> <!-- Updated link -->
+        </nav>
+    </header>
+    </header>
+    <div class="container">
+        <form action="submit.php" method="post">
+            <div class="question">
+                <h2>How does your skin feel when you wake up?</h2>
+                <div class="answers">
+                    <input type="radio" id="tightAndStrechy" name="skinFeel" value="tight and strechy">
+                    <label for="tightAndStrechy">Tight and strechy</label> <br>
+                    <input type="radio" id="comfortable" name="skinFeel" value="comfortable">
+                    <label for="comfortable">Comfortable</label> <br>
+                    <input type="radio" id="oilyInSomePlaces" name="skinFeel" value="oily in some places">
+                    <label for="oilyInSomePlaces">Oily in some places</label> <br>
+                </div>
+            </div>
+            <div class="question">
+                <h2>Are you allergic to any ingredients or skincare products?</h2>
+                <p>Breakout, rashes, itching are some signs of allergic reactions.</p>
+                <div class="answers">
+                    <input type="radio" id="yesAllergic" name="allergic" value="yes">
+                    <label for="yesAllergic">Yes</label> <br>
+                    <input type="radio" id="noAllergic" name="allergic" value="no">
+                    <label for="noAllergic">No</label> <br>
+                </div>
+            </div>
+            <div class="question">
+                <h2>Do you suffer from any medical skin condition?</h2>
+                <p>You can pick multiple options, if applicable.</p>
+                <div class="answers">
+                    <input type="checkbox" id="noMedicalCondition" name="medicalCondition" value="no medical conditions">
+                    <label for="noMedicalCondition">No Medical Conditions</label> <br>
+                    <input type="checkbox" id="rosacea" name="medicalCondition" value="rosacea">
+                    <label for="rosacea">Rosacea</label> <br>
+                    <input type="checkbox" id="atopicDermatitis" name="medicalCondition" value="atopic dermatitis">
+                    <label for="atopicDermatitis">Atopic Dermatitis</label> <br>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Redirect to dashboard.html on Login button click
+            $('#btn2').click(function(e) {
+                e.preventDefault(); 
+                window.location.href = "home.html";
+            });
+
+            // Alert for Sign Up button click
+            $('#btn1').click(function(e) {
+                e.preventDefault();
+                alert("Signed Up Successfully!");
+            });
+        });
+    </script>
+  <style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;      /* Vertically center */
+    height: 100vh;            /* Full viewport height */
+    margin: 0;                /* Ensure no margin on body */
+}
+
+main {
+    width: 100%;  /* Full width for the container */
+    display: flex;
+    justify-content: center;  /* Ensure content is centered */
+    align-items: center;
+}
+
+#dashboard {
+    display: flex;
+    width: 800px; /* Adjust width as needed */
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensure content stays within the box */
+    justify-content: center; /* Center content horizontally */
+}
+
+.form-container {
+    flex: 1; /* Equal width for both forms */
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"]
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus
+input[type="email"]:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+  </style>
+</head>
+<body>
+  <main>
+    <section id="dashboard">
+        <h2></h2>
+        <div class="form-wrapper">
+            <!-- Login Form -->
+            <div class="form-container login-form">
+                <h3>Login</h3>
+                <form action="/login" method="POST">
+                    <label for="login-mobile">Mobile Number:</label>
+                    <input type="text" id="login-mobile" name="mobile" pattern="[0-9]{10}" placeholder="Enter Mobile Number" required>
+                
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" name="password" placeholder="Enter Password" required>
+                
+                    <button type="submit">Login</button>
+                </form>
+                
+            </div>
+
+            <!-- Sign Up Form -->
+            <div class="form-container signup-form">
+                <h3>Sign Up</h3>
+                <form action="/signup" method="POST">
+
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" name="email" required>
+
+                    <label for="signup-name">Full Name:</label>
+                    <input type="text" id="signup-name" name="name" required>
+                
+                    <label for="signup-mobile">Mobile Number:</label>
+                    <input type="text" id="signup-mobile" name="mobile" pattern="[0-9]{10}" required>
+                
+                    <label for="signup-password">Password:</label>
+                    <input type="password" id="signup-password" name="password" required>
+                                
+                    <button type="submit">Sign Up</button>
+                </form>
+                
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>

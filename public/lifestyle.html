@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Type Questionnaire</title>
+    <style>
+        body {
+            background-image: url('skin care.webp');
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 150px auto; /* Center the container */
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin: 0;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        label {
+            display: inline-block;
+            margin-right: 15px;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .navbar {
+            background-color: rgba(51, 51, 51, 0.75);
+
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(5px);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 999;
+        }
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .navbar nav {
+            display: flex;
+            align-items: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 16px;
+            padding: 0.5rem;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <h1>Glow Guide</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="more.html">About</a>
+            <a href="skin.html">SKIN</a>
+            <a href="lifestyle.html">LIFESTYLE</a>
+            <a href="pre.html">PREFERENCES</a>
+            <a href="index.html">LOGOUT</a> <!-- Updated link -->
+        </nav>
+    </header>
+
+    <form action="submit.php" method="post" class="container">
+        <h1>Skin Type Questionnaire</h1>
+        <br>
+
+        <div class="question">
+            <p><h2>How often do you experience stress?</h2></p>
+            <input type="radio" id="neverStress" name="stressLevel" value="never">
+            <label for="neverStress">Never</label> 
+            <input type="radio" id="rarelyStress" name="stressLevel" value="rarely">
+            <label for ="rarelyStress">Rarely</label>
+            <input type="radio" id="oftenStress" name="stressLevel" value="often">
+            <label for ="oftenStress">Often</label> <br><br>
+        </div>
+
+        <div class="question">
+            <p><h2>How many hours of sleep do you usually get all night?</h2></p>
+            <input type="radio" id="3-4hoursSleep" name="sleepDuration" value="3-4 hours">
+            <label for="3-4hoursSleep">3-4 hours</label> 
+            <input type="radio" id="4-6hoursSleep" name="sleepDuration" value="4-6 hours">
+            <label for ="4-6hoursSleep">4-6 hours</label>
+            <input type="radio" id="6-8hoursSleep" name="sleepDuration" value="6-8 hours">
+            <label for ="6-8hoursSleep">6-8 hours</label> <br><br>
+        </div>
+
+        <div class="question">
+            <p><h2>How many glasses of water do you drink per day?</h2></p>
+            <input type="radio" id="2orLessGlasses" name="waterIntake" value="2 or less">
+            <label for="2orLessGlasses">2 or less</label> 
+            <input type="radio" id="3-4Glasses" name="waterIntake" value="3-4">
+            <label for ="3-4Glasses">3-4</label>
+            <input type="radio" id="5-7Glasses" name="waterIntake" value="5-7">
+            <label for ="5-7Glasses">5-7</label> <br><br>
+        </div>
+
+        <div class="question">
+            <p><h2>How often do you moisturize your skin?</h2></p>
+            <input type="radio" id="neverMoisturize" name="moisturizeFrequency" value="never">
+            <label for="neverMoisturize">Never</label> 
+            <input type="radio" id="rarelyMoisturize" name="moisturizeFrequency" value="rarely">
+            <label for ="rarelyMoisturize">Rarely</label>
+            <input type="radio" id="sometimesMoisturize" name="moisturizeFrequency" value="sometimes">
+            <label for ="sometimesMoisturize">Sometimes</label> 
+            <input type="radio" id="oftenMoisturize" name="moisturizeFrequency" value="often">
+            <label for ="oftenMoisturize">Often</label> <br><br>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
